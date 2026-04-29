@@ -39,7 +39,6 @@ header{
 #container{
     background-image: url(images/background-mobile.png);
     background-size: contain;
-    height: 400vh;
 }
 
 .title {
@@ -391,12 +390,10 @@ a.btn{
     }
 }
 
-footer{
-    background-color: var(--color-primary-1);
-    color: var(--color-neutral-0);
-    text-align: center;
-    padding: 2px;
-}
+
+
+
+
 @media (min-width: 768px){
 
     #container{
@@ -459,4 +456,16 @@ footer{
             }
     }
 }
+}
+
+footer{
+    background-color: var(--color-primary-1);
+    color: var(--color-neutral-0);
+    text-align: center;
+    padding: 15px;
+
+    p{
+        font-size: 1rem;
+        font-weight: 500;
+    }
 }
