@@ -200,8 +200,8 @@ header li::after {
     }
 
     .login{
-        margin-top: 40px;
-        flex-direction: column;
+        margin-top: 80px;
+        flex-direction: column-reverse;
         gap: 30px;
         
     }
