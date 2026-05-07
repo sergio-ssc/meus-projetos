@@ -200,7 +200,7 @@ header li::after {
     }
 
     .login{
-        margin-top: auto;
+        margin-top: 40px;
         flex-direction: column;
         gap: 30px;
         
