@@ -38,6 +38,13 @@
   a{text-decoration:none; color:inherit;}
   ul{list-style:none;}
   img{max-width:100%; display:block;}
+  .thumb img,
+  .photo-card .ph-inner img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
   section{position:relative;}
   .container{
     max-width:1180px;
@@ -286,6 +293,17 @@
     overflow:hidden;
     animation:float 6s ease-in-out infinite;
   }
+  .photo-card .ph-inner{
+    width:100%;
+    height:100%;
+    padding:0;
+  }
+  .photo-card .ph-inner img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
   @keyframes float{
     0%,100%{transform:translateY(0);}
     50%{transform:translateY(-14px);}
@@ -293,7 +311,7 @@
   .photo-card .ph-inner{
     text-align:center;
     color:var(--azul-escuro);
-    padding:20px;
+    padding: 0px;
   }
   .photo-card .ph-inner svg{width:64px; height:64px; margin:0 auto 14px; opacity:.55;}
   .photo-card .ph-inner span{
@@ -626,11 +644,7 @@
         </svg>
         <div class="photo-card">
           <div class="ph-inner">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="3" y="5" width="18" height="14" rx="2" stroke="#0B3D57" stroke-width="1.3"/>
-              <circle cx="12" cy="12" r="3.2" stroke="#0B3D57" stroke-width="1.3"/>
-              <path d="M7 5V3.5M17 5V3.5" stroke="#0B3D57" stroke-width="1.3" stroke-linecap="round"/>
-            </svg>
+            <img src="imagens/Foto-Carol (1).jpg " alt="Foto Carol">
           </div>
         </div>
         <div class="badge-float">
@@ -664,7 +678,7 @@
         <div class="card-trabalho reveal">
           <div class="thumb">
             <span class="tag">Estética</span>
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s-7-4.6-9.5-9C.6 8.4 2 4.8 5.4 4.1 7.6 3.6 10 4.5 12 7c2-2.5 4.4-3.4 6.6-2.9 3.4.7 4.8 4.3 2.9 7.9C19 16.4 12 21 12 21Z" stroke="#0B3D57" stroke-width="1.3"/></svg>
+            <img src="imagens/clareamento-dental.jpg"alt="">
           </div>
           <div class="card-body">
             <h3>Clareamento dental</h3>
@@ -676,7 +690,7 @@
         <div class="card-trabalho reveal reveal-delay-1">
           <div class="thumb">
             <span class="tag">Reabilitação</span>
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="16" height="16" rx="4" stroke="#0B3D57" stroke-width="1.3"/><path d="M9 9h6v6H9z" stroke="#0B3D57" stroke-width="1.3"/></svg>
+            <img src="imagens/protese.jpg" alt="protese">
           </div>
           <div class="card-body">
             <h3>Faceta em resina</h3>
@@ -688,7 +702,7 @@
         <div class="card-trabalho reveal reveal-delay-2">
           <div class="thumb">
             <span class="tag">Ortodontia</span>
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12h16M4 12a4 4 0 0 1 4-4M20 12a4 4 0 0 0-4-4" stroke="#0B3D57" stroke-width="1.3" stroke-linecap="round"/></svg>
+            <img src="imagens/boca2.jpg" alt="alinhamento-dentário">
           </div>
           <div class="card-body">
             <h3>Alinhamento dentário</h3>
@@ -700,7 +714,7 @@
         <div class="card-trabalho reveal">
           <div class="thumb">
             <span class="tag">Prevenção</span>
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6l-7-3Z" stroke="#0B3D57" stroke-width="1.3"/></svg>
+            <img src="imagens/boca1.jpg" alt="">
           </div>
           <div class="card-body">
             <h3>Limpeza e profilaxia</h3>
@@ -709,22 +723,10 @@
           </div>
         </div>
 
-        <div class="card-trabalho reveal reveal-delay-1">
-          <div class="thumb">
-            <span class="tag">Restauração</span>
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8" stroke="#0B3D57" stroke-width="1.3"/><path d="M9 12h6" stroke="#0B3D57" stroke-width="1.3" stroke-linecap="round"/></svg>
-          </div>
-          <div class="card-body">
-            <h3>Restauração estética</h3>
-            <p>Correção de cárie com técnica direta, preservando ao máximo a estrutura
-            natural do dente.</p>
-          </div>
-        </div>
-
         <div class="card-trabalho reveal reveal-delay-2">
           <div class="thumb">
             <span class="tag">Cirurgia</span>
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 4v9a4 4 0 0 0 8 0V4M6 4h8" stroke="#0B3D57" stroke-width="1.3" stroke-linecap="round"/><circle cx="18" cy="18" r="2" stroke="#0B3D57" stroke-width="1.3"/></svg>
+            <img src="imagens/extracao.jpg" alt="extração de siso">
           </div>
           <div class="card-body">
             <h3>Extração de siso</h3>
@@ -733,9 +735,12 @@
           </div>
         </div>
 
-      </div>
+        <!--<div class="section-head reveal">
+        <p></p>
+      </div>-->
 
-      <!--<p class="trabalhos-note reveal">📸 Dica: substitua os ícones acima pelas fotos reais dos casos (antes/depois) para maior impacto.</p>-->
+      </div>
+      
     </div>
   </section>
 
